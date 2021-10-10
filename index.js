@@ -15,6 +15,35 @@ const questions =[
         name: 'description',
         message: 'What is the description of the project?',
         default: 'Project Description'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What is the license for this project?',
+        choices: ['Apache 2.0','BSD 3-Clause','Eclipse Public License 1.0', 
+                  'GNU GPL v3', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 
+                  'BM Public License Version 1.0', 'MIT', 'Mozilla Public License 2.0']
+
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Give instruction on how to install the project'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Give instruction on how to use this project, Tip: Provide Examples!'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Give instruction on how others can contribute to this project'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Give instruction on how others can run tests on this project'
     }
 ];
 
