@@ -27,12 +27,12 @@ function generateMarkdown(data) {
     toc += "\n * [Description](#Description)"
     
     //If statements that add to table of Contents if that section has been answered
-    if(data.Installation) toc += '\n* [Installation](#Installation)';
+    if(data.installation) toc += '\n* [Installation](#Installation)';
     if(data.usage) toc += '\n* [Usage](#Usage)';
     if(data.contributing) toc += '\n* [Contributing](#Contributing)';
     if(data.tests) toc += '\n* [Tests](#Tests)';
 
-    return toc;
+    return toc += '\n';
   }
 
   /* Verification functions that each section has value before adding it to Markdown */
