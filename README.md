@@ -1,3 +1,1 @@
-{
-	"title": "Readme Generator"
-}
+# Readme Generator
