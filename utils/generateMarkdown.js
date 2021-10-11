@@ -5,12 +5,6 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-
-}
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -20,7 +14,7 @@ function renderLicenseSection(license) {
 //function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
-  
+  console.log(indexOf(data.license));
   const getTOC = () => {
     let toc = `## Table of Contents`;
     
@@ -31,7 +25,7 @@ function generateMarkdown(data) {
     if(data.usage) toc += '\n* [Usage](#Usage)';
     if(data.contributing) toc += '\n* [Contributing](#Contributing)';
     if(data.tests) toc += '\n* [Tests](#Tests)';
-
+  
     return toc += '\n';
   }
 
@@ -70,6 +64,8 @@ function generateMarkdown(data) {
   `
   # ${data.title}
   
+  ${renderLicenseBadge(data.license)}
+
   ## Description
   ${data.description}
   
