@@ -40,9 +40,9 @@ const questions =[
         type: 'list',
         name: 'license',
         message: 'What is the license for this project?',
-        choices: ['Apache 2.0','BSD 3-Clause','Eclipse Public License 1.0', 
-                  'GNU GPL v3', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 
-                  'BM Public License Version 1.0', 'MIT', 'Mozilla Public License 2.0']
+        choices: ['Apache 2.0','BSD 3-Clause','EPL 1.0', 
+                  'GNU GPLv3', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 
+                  'IPL 1.0', 'MIT', 'MPL 2.0']
 
     },
     {

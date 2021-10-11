@@ -1,20 +1,31 @@
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  //simple check to see if a license is selected
+  if(!license) return '';
+  
+  let licenseName = license.split(' ');
+  let licenseLink = ``;
+  let badgeName = ``;
+  
+  for(i = 0; i < licenseName.length; i++) {
+    if(i+1 === licenseName.length) {
+      licenseLink += licenseName[i];
+      badgeName += licenseName[i];
+    } else {
+      licenseLink += `${licenseName[i]}-`;
+       badgeName += `${licenseName[i]}%20`;
+    }
+  }
 
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-
+  return `[![License](https://img.shields.io/badge/License-${badgeName}-blue.svg)](https://opensource.org/licenses/${licenseLink})`;
 }
 
 //function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
-  console.log(indexOf(data.license));
+
   const getTOC = () => {
     let toc = `## Table of Contents`;
     
@@ -50,6 +61,11 @@ function generateMarkdown(data) {
     return '';
   }
 
+  const license = () => {
+    if(license) return `## License \n ${data.license}`;
+    return '';
+  }
+
   const questions = () => {
     let questions = `## Questions \n Questions about the project? \n Reach out:`;
 
@@ -78,6 +94,8 @@ ${installation()}
   ${contributing()}
 
   ${tests()}
+
+  ${license()}
 
   ${questions()}
   `;
