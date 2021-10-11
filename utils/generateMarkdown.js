@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   }
 
   const license = () => {
-    if(license) return `## License \n ${data.license}`;
+    if(license) return `## License \n This Project is covered under the ${data.license}`;
     return '';
   }
 
