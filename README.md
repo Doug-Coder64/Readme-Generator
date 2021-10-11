@@ -1,10 +1,10 @@
 
-  # Project Title
+  # Readme Generator
   
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Project Description
+  A simple easy to use readme generator that uses nodejs and inquirer
   
   ## Table of Contents
  * [Description](#Description)
@@ -16,23 +16,23 @@
  
   
 ## Installation 
- t
+ Clone the project to their projects folder, then type `npm init`
 
   ## Usage 
- t
+ To use the readme generator type node index.js from the readme-generators directory
 
   ## Contributing 
- t
+ Message below to get added to this project
 
   ## Tests 
- t
+ User can add different markdown syntax within prompts to see how it reacts
 
   ## License 
- Apache 2.0
+ This Project is covered under the MIT
 
   ## Questions 
  Questions about the project? 
  Reach out: 
- * [t](mailto:t) 
- * [t](https://github.com/t)
+ * [douglaspeterson6@gmail.com](mailto:douglaspeterson6@gmail.com) 
+ * [dougcoder-64](https://github.com/dougcoder-64)
   
