@@ -17,7 +17,7 @@ function renderLicenseSection(license) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+//function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
   
@@ -55,6 +55,15 @@ function generateMarkdown(data) {
     if(data.tests) return `## Tests \n ${data.tests}`;
     return '';
   }
+
+  const questions = () => {
+    let questions = `## Questions \n Questions about the project? \n Reach out:`;
+
+    if(data.email) questions += ` \n * [${data.email}](mailto:${data.email})`;
+    if(data.github) questions += ` \n * [${data.github}](https://github.com/${data.github})`;
+
+    return questions;
+  }
   /* End of Verification functions */
 
   let markdown = 
@@ -64,15 +73,17 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   
-  ${getTOC()}
+  ${getTOC()} \n 
   
-  ${installation()}
+${installation()}
 
   ${usage()}
 
   ${contributing()}
 
   ${tests()}
+
+  ${questions()}
   `;
 
   return markdown;

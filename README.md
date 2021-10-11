@@ -10,9 +10,10 @@
 * [Usage](#Usage)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
-
+ 
+ 
   
-  ## Installation 
+## Installation 
  test
 
   ## Usage 
@@ -23,4 +24,9 @@
 
   ## Tests 
  test
+
+  ## Questions 
+ Questions about the project? Reach out: 
+ * [test](mailto:test) 
+ * [test](https://github.com/test)
   

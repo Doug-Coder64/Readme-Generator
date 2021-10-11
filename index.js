@@ -17,15 +17,6 @@ const questions =[
         default: 'Project Description'
     },
     {
-        type: 'list',
-        name: 'license',
-        message: 'What is the license for this project?',
-        choices: ['Apache 2.0','BSD 3-Clause','Eclipse Public License 1.0', 
-                  'GNU GPL v3', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 
-                  'BM Public License Version 1.0', 'MIT', 'Mozilla Public License 2.0']
-
-    },
-    {
         type: 'input',
         name: 'installation',
         message: 'Give instruction on how to install the project'
@@ -44,7 +35,26 @@ const questions =[
         type: 'input',
         name: 'tests',
         message: 'Give instruction on how others can run tests on this project'
-    }
+    }, 
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What is the license for this project?',
+        choices: ['Apache 2.0','BSD 3-Clause','Eclipse Public License 1.0', 
+                  'GNU GPL v3', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 
+                  'BM Public License Version 1.0', 'MIT', 'Mozilla Public License 2.0']
+
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Give your email address for those to ask questions'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?'
+    },
 ];
 
 // TODO: Create a function to write README file
